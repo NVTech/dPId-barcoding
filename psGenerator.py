@@ -16,10 +16,10 @@
 
 import sys, csv
 
-with open('dPIdTagTemplateProlog.ps') as tagTemplateProlog:
+with open('ps/dPIdTagTemplateProlog.ps') as tagTemplateProlog:
 	print tagTemplateProlog.read()
 
-with open('dPIdTagTemplate.ps') as tagTemplate:
+with open('ps/dPIdTagTemplate.ps') as tagTemplate:
 	print tagTemplate.read()
 
 print r"""/pageParameters <<
