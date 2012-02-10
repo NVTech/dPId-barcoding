@@ -1,6 +1,8 @@
+%.pdf: %.ps
+	ps2pdf $<
 
 %.nuera.ps: %.nuera.csv
-	python ../program/psGenerator.py < $< > $@
+	(cd ..; python psLabelGenerator.py < samples/$< > samples/$@)
 
 %.nuera_titled.ps: %.nuera_titled.csv
-	python ../program/psGenerator.py < $< > $@
+	(cd ..; python psGenerator.py < samples/$< > samples/$@)
